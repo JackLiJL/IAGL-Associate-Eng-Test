@@ -1,5 +1,8 @@
 .todo-app {
     font-family: sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /** add todo **/
@@ -7,16 +10,50 @@
     margin-left: 0.5rem;
 }
 
+.add-todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-todo-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-todo-form button {
+  padding: 0 20px;
+  background: #27b548;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-todo-form button:hover {
+  background: #218838;
+}
+
 /** todo list **/
 .todo-list {
     margin-top: 1rem;
     text-align: left;
     list-style: none;
+    padding: 0;
 }
 
 /** todo item **/
 .todo-item {
-    font-family: monospace;
+    font-family: sans-serif;
     cursor: pointer;
     line-height: 1.5;
+    padding: 20px;
+    background: #f3f2f2;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
